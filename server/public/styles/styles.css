@@ -1,11 +1,19 @@
 body {
   background-image: url('https://img.freepik.com/premium-vector/black-checker-chess-square-background_350503-56.jpg?w=2000');
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 input {
   border-radius: 2rem;
   background-color: darkorange;
-  font-size: 2rem;
-  color: #333;
+  font-size: 1.5rem;
+  width: 15%;
+  color: white;
+  margin: 0 .5rem 3rem .5rem;
+  text-align: center;
+  box-shadow: 0 1rem 1rem 0 darkslateblue;
+  
 }
 
 #table-container {
@@ -39,7 +47,7 @@ input {
     margin-bottom: 2rem;
     border-bottom: 1rem solid darkslateblue;
     width: 100%;
-    color: darkviolet;
+    color: darkslateblue;
     background-color: white;
   }
 
@@ -74,19 +82,46 @@ input {
     background-color: #eee;
   }
 
+  #btnSec {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+  }
+
   button {
     border-radius: 2rem;
-    height: 3rem;
-    width: 5.5rem;
+    height: 5rem;
+    width: 7rem;
     font-size: 2rem;
-    margin: .5rem;
+    margin: 2rem;
     background-color: chartreuse;
+    color: darkslateblue;
+    box-shadow: 0 1.5rem 1.5rem 0 darkslateblue;
+
   }
 
  header {
-  background-color: white;
-  width: fit-content;
+  background-color: darkslateblue;
+  width: 25rem;
   border-radius: 2rem;
   padding: 2px;
-  margin: 1.5rem
+  margin: 1.5rem;
+  border: 1px solid black;
+  color: chartreuse;
+  text-align: center;
+  box-shadow: 0 2rem 2rem 0 chartreuse;
  }
+
+ label {
+  color: crimson;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: white;
+
+ }
+
+ button:active {
+  box-shadow: inset .5rem .5rem darkslateblue;
+}
+
